@@ -4,8 +4,8 @@
   <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
 	<style>
 		/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
-@layer theme, base, components, utilities;
-@layer theme {
+
+@media (min-width: 1px) {
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
@@ -375,7 +375,7 @@
     --default-mono-font-variation-settings: var(--font-mono--font-variation-settings);
   }
 }
-@layer base {
+@media (min-width: 1px) {
   *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
     margin: 0;
@@ -516,7 +516,7 @@
     display: none !important;
   }
 }
-@layer utilities {
+@media (min-width: 1px) {
   .absolute {
     position: absolute;
   }
